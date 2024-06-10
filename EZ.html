@@ -202,7 +202,7 @@
 
     <script>
         // JavaScript code to fetch and display the user's IP address and information
-        function fetchIPAndInfo() 
+        function fetchIPAndInfo() {
             fetch('https://api.ipify.org/?format=json')
                 .then(response => response.json())
                 .then(data => {
@@ -219,7 +219,7 @@
                     document.getElementById('ip-address-value').textContent = 'Unable to fetch IP address.';
                     document.getElementById('ip-info').textContent = 'Unable to fetch IP information.';
                 });
-        
+        }
 
         // Fetch IP address and information initially
         fetchIPAndInfo();
